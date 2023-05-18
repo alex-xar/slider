@@ -1,0 +1,183 @@
+@charset "UTF-8";
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*--------------------*/
+.slider__content {
+  width: 400px;
+  margin: 0 auto;
+}
+.slider__title {
+  font-weight: 500;
+  font-size: 2.1875rem;
+  line-height: 3.125rem;
+  color: #0b132a;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.slider__text {
+  line-height: 1.875rem;
+  color: #4f5665;
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.cards {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+.cards__box {
+  width: 340px;
+  height: 230px;
+  padding: 20px;
+}
+.cards__info {
+  display: flex;
+  justify-content: space-around;
+}
+.cards__name {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 10px;
+}
+.cards__bold {
+  font-weight: 700;
+}
+.cards__grade {
+  display: flex;
+  align-items: center;
+}
+.cards__text {
+  line-height: 1.875rem;
+  margin-top: 20px;
+}
+
+@media (max-width: 550px) {
+  .page__slider {
+    margin-top: 30px;
+  }
+  .slider__content {
+    width: 300px;
+  }
+}
+.cliking {
+  border: 2px solid rgb(199, 59, 59);
+  border-radius: 6px;
+  margin: 15px;
+  width: 38px;
+  height: 200px;
+}
+
+.leftB {
+  display: inline-flex;
+  width: 20px;
+  height: 20px;
+  border-top: 3px solid red;
+  border-left: 3px solid red;
+  transform: rotate(-45deg);
+}
+
+.next {
+  padding-left: 10px;
+}
+
+.back {
+  padding-right: 10px;
+}
+
+.rightB {
+  display: inline-flex;
+  width: 20px;
+  height: 20px;
+  border-top: 3px solid red;
+  border-left: 3px solid red;
+  transform: rotate(135deg);
+}
+
+.swiper {
+  width: 340px;
+  height: 230px;
+  overflow: hidden;
+  border: 2px solid rgb(199, 59, 59);
+  border-radius: 6px;
+}
+
+.swiper-wrapper {
+  width: 1020px;
+  height: 230px;
+  display: flex;
+  position: relative;
+  left: 0;
+  transition: all ease 1s;
+}
